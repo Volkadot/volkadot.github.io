@@ -10,18 +10,32 @@
     <title>Volkadot</title>
 </head>
 <body>
-    <header class="w-100 vh-100">
-        <canvas id="background" class="w-100 vh-100"></canvas>
-        <div class="vh-100 w-100 d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0">
-            <img class="mb-3" src="https://raw.githubusercontent.com/Volkadot/assets/main/Volkadot/Volkadot.svg" alt="Volkadot" width="140">
-            <div>
-                <h1 style="font-family: 'Major Mono Display', sans-serif; font-size: calc(1.6rem + 1.5vw);">VOLKADOT</h1>
+    <header class="w-100 vh-100 mb-5">
+        <canvas id="background" class="w-100 h-100"></canvas>
+        <div class="h-100 w-100 d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 z-2">
+            <img class="mb-4" src="https://raw.githubusercontent.com/Volkadot/assets/main/Volkadot/Volkadot.svg" alt="Volkadot" width="140">
+            <div class="text-center">
+                <h1 class="mono" tyle="font-size: calc(1.6rem + 1.5vw);">VOLKADOT</h1>
+                <h4 class="mono">dot | open source</h4>
             </div>
         </div>
+        <div class="position-absolute w-100 h-50 bottom-0 start-0 bottom"></div>
     </header>
     
     <main>
-        
+        <div id="quotes" class="container text-center mb-5">
+            <hr>
+            <div class="mono">
+                we are a small, open source organization that makes
+                <br>
+                small projects just because we want to.
+                <br>
+                we have a philosophy, which is that we
+                <br>
+                don't want to make serious projects.
+            </div>
+            <hr>
+        </div>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
