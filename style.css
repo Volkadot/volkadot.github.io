@@ -70,7 +70,7 @@ header .bottom {
 .box p {
     position: absolute;
     text-align: center;
-    padding-top: calc(1.325rem + .9vw + 2.5rem);
+    padding-top: calc(1.325rem + .9vw + 1rem + 25px);
     padding-left: 1rem;
     padding-right: 1rem;
     width: 100%;
