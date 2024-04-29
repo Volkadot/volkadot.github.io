@@ -49,3 +49,9 @@ function drawCircles(canvas) {
 
 let canvas = document.getElementById("background");
 drawCircles(canvas);
+
+// Loading
+window.onload = () => {
+    const loading = document.querySelector(".loading");
+    loading.classList.add("loaded");
+}

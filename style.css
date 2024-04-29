@@ -17,6 +17,94 @@ header .bottom {
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(2,0,36,0) 100%);
 }
 
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    transition: 0.5s;
+}
+
+.loading.loaded {
+    visibility: hidden;
+    opacity: 0;
+}
+
 .mono {
     font-family: 'Major Mono Display', sans-serif;
+}
+
+.box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.box .title {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.box a {
+    color: #fff;
+}
+
+.box p {
+    position: absolute;
+    text-align: center;
+    padding-top: calc(1.325rem + .9vw + 2.5rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(60px);
+    z-index: 3;
+    transition: 0.5s;
+}
+
+.box .title hr {
+    opacity: 1;
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+.box img {
+    width: 100%;
+    filter: brightness(0.4);
+    transition: 0.3s;
+}
+
+.box:hover > img {
+    filter: brightness(0.7) blur(15px);
+    transform: scale(1.2);
+}
+
+.box:hover > .title {
+    transform: translateY(-60px);
+}
+
+.box:hover > p {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
