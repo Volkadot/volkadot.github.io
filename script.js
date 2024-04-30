@@ -1,6 +1,6 @@
 function drawCircles(canvas) {
-    const circleColor = "rgba(255, 255, 255, 0.3)";
-    const circleSize = 2;
+    const circleColor = "rgba(255, 255, 255, 0.2)";
+    const circleSize = 5;
     const circleSpacing = 20;
 
     const ctx = canvas.getContext("2d");
