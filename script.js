@@ -48,10 +48,20 @@ function drawCircles(canvas) {
 }
 
 let canvas = document.getElementById("background");
+let navbar = document.querySelector(".navbar");
 drawCircles(canvas);
 
 // Loading
 window.onload = () => {
     const loading = document.querySelector(".loading");
     loading.classList.add("loaded");
+}
+
+// Navbar
+window.onscroll = () => {
+    if (window.scrollY > 20) {
+        navbar.classList.add("scroll");
+    } else {
+        navbar.classList.remove("scroll");
+    }
 }
