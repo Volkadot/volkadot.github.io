@@ -1,5 +1,5 @@
 function drawCircles(canvas) {
-    const circleColor = "rgba(255, 255, 255, 0.2)";
+    const circleColor = "rgba(255, 255, 255, .7)";
     const circleSize = 2;
     const circleSpacing = 50;
 
